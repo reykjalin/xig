@@ -3,4 +3,9 @@ name = "xig"
 version = "0.1.0"
 authors = ["Kristófer Reykjalín <kristofert13@ru.is>"]
 
-[dependencies]
+[dependencies.gtk]
+version = "0.5.0"
+features = ["v3_22"]
+
+[dependencies.gio]
+version = "0.5.0"
