@@ -1,0 +1,6 @@
+[package]
+name = "xig"
+version = "0.1.0"
+authors = ["Kristófer Reykjalín <kristofert13@ru.is>"]
+
+[dependencies]
