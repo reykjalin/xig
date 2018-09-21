@@ -31,14 +31,14 @@ fn build_ui(application: &gtk::Application) {
 
     // Open file button
     let open_button = gtk::Button::new_from_icon_name("document-open-symbolic", gtk::IconSize::Button.into());
-    new_button.set_tooltip_text("Open File");
     new_button.set_action_name("win.open");
+    open_button.set_tooltip_text("Open File");
     header_bar.pack_start(&open_button);
 
     // Save button
     let save_button = gtk::Button::new_from_icon_name("document-save-symbolic", gtk::IconSize::Button.into());
-    new_button.set_tooltip_text("Save File");
     new_button.set_action_name("win.save");
+    save_button.set_tooltip_text("Save File");
     header_bar.pack_end(&save_button);
 
     // Show window
