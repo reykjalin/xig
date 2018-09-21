@@ -26,19 +26,19 @@ fn build_ui(application: &gtk::Application) {
     // New file button
     let new_button = gtk::Button::new_from_icon_name("document-new-symbolic", gtk::IconSize::Button.into());
     new_button.set_tooltip_text("New File");
-    new_button.set_action_name("win.new-tab");
+    // new_button.set_action_name("win.new-tab");
     header_bar.pack_start(&new_button);
 
     // Open file button
     let open_button = gtk::Button::new_from_icon_name("document-open-symbolic", gtk::IconSize::Button.into());
-    new_button.set_action_name("win.open");
     open_button.set_tooltip_text("Open File");
+    // open_button.set_action_name("win.open");
     header_bar.pack_start(&open_button);
 
     // Save button
     let save_button = gtk::Button::new_from_icon_name("document-save-symbolic", gtk::IconSize::Button.into());
-    new_button.set_action_name("win.save");
     save_button.set_tooltip_text("Save File");
+    // save_button.set_action_name("win.save");
     header_bar.pack_end(&save_button);
 
     // Show window
